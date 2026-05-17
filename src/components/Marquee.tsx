@@ -1,4 +1,4 @@
-jimport React from 'react';
+import React from 'react';
 import { motion } from 'motion/react';
 
 export default function Marquee() {
@@ -22,7 +22,7 @@ export default function Marquee() {
     <div className="relative overflow-hidden bg-background">
 
       {/* ── Manifesto area ───────────────────────────── */}
-      <div className="relative pt-10 md:pt-12 pb-0 flex flex-col items-center justify-center">
+      <div className="relative pt-12 pb-0 flex flex-col items-center justify-center">
 
         {/* BRIXLINE watermark */}
         <div
@@ -54,7 +54,7 @@ export default function Marquee() {
           </motion.p>
 
           {/* Line 1: Built for Closure, */}
-          <div className="flex flex-wrap justify-center gap-x-3 md:gap-x-4 gap-y-1 mb-2">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mb-2">
             {line1.map((word, i) => (
               <motion.span
                 key={word}
@@ -62,7 +62,7 @@ export default function Marquee() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
                 viewport={{ once: true }}
-                className="text-4xl sm:text-5xl md:text-8xl font-black leading-none tracking-tight text-on-surface"
+                className="text-5xl md:text-8xl font-black leading-none tracking-tight text-on-surface"
               >
                 {word}
               </motion.span>
@@ -70,7 +70,7 @@ export default function Marquee() {
           </div>
 
           {/* Line 2: Not Just Discovery. */}
-          <div className="flex flex-wrap justify-center gap-x-3 md:gap-x-4 gap-y-1 mb-6 md:mb-8">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mb-8">
             {line2.map((word, i) => (
               <motion.span
                 key={word}
@@ -78,7 +78,7 @@ export default function Marquee() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 + i * 0.1, duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
                 viewport={{ once: true }}
-                className={`text-4xl sm:text-5xl md:text-8xl font-black leading-none tracking-tight ${
+                className={`text-5xl md:text-8xl font-black leading-none tracking-tight ${
                   word === 'Discovery.' ? 'text-primary' : 'text-on-surface'
                 }`}
               >

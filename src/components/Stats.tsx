@@ -23,13 +23,13 @@ export default function Stats() {
       {/* Section orb glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-primary/4 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="mb-10 md:mb-16 text-center relative z-10">
+      <div className="mb-16 text-center relative z-10">
         <span className="section-label">Platform Performance</span>
-        <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-on-surface mb-4 md:mb-6 tracking-tighter">
+        <h2 className="text-5xl md:text-7xl font-black text-on-surface mb-6 tracking-tighter">
           Driving Success for{' '}
           <span className="shimmer-text">Modern Brokers</span>
         </h2>
-        <p className="text-on-surface/60 text-base md:text-lg max-w-2xl mx-auto font-medium">
+        <p className="text-on-surface/60 text-lg max-w-2xl mx-auto font-medium">
           Join the fastest growing real estate ecosystem focused on agent performance, transparency, and next-gen technology.
         </p>
       </div>
@@ -45,7 +45,7 @@ export default function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.12, duration: 0.6, ease: 'easeOut' }}
               viewport={{ once: true }}
-              className={`relative overflow-hidden bg-white border border-gray-100 shadow-sm p-5 md:p-8 rounded-3xl text-center group hover:shadow-xl ${Meta.glow} hover:border-transparent hover:-translate-y-1 transition-all duration-300`}
+              className={`relative overflow-hidden bg-white border border-gray-100 shadow-sm p-8 rounded-3xl text-center group hover:shadow-xl ${Meta.glow} hover:border-transparent hover:-translate-y-1 transition-all duration-300`}
             >
               {/* Watermark numeral */}
               <div className="absolute -top-4 -right-2 text-[7rem] font-black text-gray-50 leading-none select-none pointer-events-none">
@@ -57,7 +57,7 @@ export default function Stats() {
                 <Icon size={22} />
               </div>
 
-              <h3 className={`text-3xl md:text-5xl font-black mb-1 ${Meta.color} group-hover:scale-105 transition-transform`}>
+              <h3 className={`text-4xl md:text-5xl font-black mb-1 ${Meta.color} group-hover:scale-105 transition-transform`}>
                 <CountUp end={stat.value} start={(stat as any).start} suffix={stat.suffix} />
               </h3>
               <p className="text-sm font-black text-on-surface tracking-tight">{stat.label}</p>
