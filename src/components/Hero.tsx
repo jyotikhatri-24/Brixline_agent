@@ -79,7 +79,7 @@ export default function Hero() {
   );
 
   return (
-    <section id="hero" ref={containerRef} className="relative min-h-screen pt-32 pb-16 px-4 md:px-8 overflow-hidden bg-background">
+    <section id="hero" ref={containerRef} className="relative min-h-screen pt-24 md:pt-32 pb-12 md:pb-16 px-4 md:px-8 overflow-hidden bg-background">
       {/* Dot-grid background */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -92,7 +92,7 @@ export default function Hero() {
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-primary/6 blur-[120px] pointer-events-none" />
       <div className="absolute top-1/2 -right-60 w-[500px] h-[500px] rounded-full bg-accent-cyan/5 blur-[120px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-20 lg:gap-32 items-center">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-32 items-center">
         
         {/* Left Content */}
         <div className="h-full">
@@ -115,14 +115,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-7xl font-extrabold leading-[1.05] tracking-tight mb-8 text-on-surface"
+            className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6 md:mb-8 text-on-surface"
           >
             The <span className="text-gradient">Agent</span> Portal<br />
             for every real<br />
             estate broker
           </motion.h1>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 mt-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8 md:gap-x-8 md:gap-y-12 mt-10 md:mt-16">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -143,18 +143,18 @@ export default function Hero() {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-16">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mt-10 md:mt-16">
             <motion.button 
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="shimmer-btn bg-primary text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-primary-dark transition-all shadow-xl shadow-primary/25 glow-pulse cursor-pointer"
+              className="shimmer-btn bg-primary text-white w-full sm:w-auto px-10 py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg hover:bg-primary-dark transition-all shadow-xl shadow-primary/25 glow-pulse cursor-pointer"
             >
               Get Started Now
             </motion.button>
             <motion.button 
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="bg-white border-2 border-gray-100 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-surface hover:border-primary/20 transition-colors text-on-surface cursor-pointer"
+              className="bg-white border-2 border-gray-100 w-full sm:w-auto px-10 py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg hover:bg-surface hover:border-primary/20 transition-colors text-on-surface cursor-pointer"
             >
               Explore Listings
             </motion.button>

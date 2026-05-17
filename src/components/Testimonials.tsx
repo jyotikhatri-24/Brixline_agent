@@ -71,10 +71,10 @@ export default function Testimonials() {
   const row2 = [...stories.slice(2), ...stories, ...stories, ...stories];
 
   return (
-    <section id="testimonials" className="py-20 bg-surface overflow-hidden relative">
+    <section id="testimonials" className="py-12 md:py-20 bg-surface overflow-hidden relative">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/4 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 text-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mb-10 md:mb-16 text-center relative z-10">
         {/* Big bold eyebrow */}
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="h-px w-16 bg-primary/30 rounded-full" />
@@ -84,10 +84,10 @@ export default function Testimonials() {
         <SplitText
           text="Hear What Our Brokers Say"
           tag="h2"
-          className="text-4xl md:text-7xl font-extrabold text-on-surface"
+          className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-on-surface"
           delay={40}
         />
-        <p className="text-on-surface/50 text-lg mt-6 max-w-xl mx-auto">
+        <p className="text-on-surface/50 text-base md:text-lg mt-4 md:mt-6 max-w-xl mx-auto">
           Real results from real estate professionals who chose Brixline.
         </p>
       </div>

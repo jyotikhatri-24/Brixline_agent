@@ -27,7 +27,7 @@ export default function App() {
         <Stats />
         
         {/* Advantage CTA */}
-        <section id="advantages" className="py-16 px-4 text-center max-w-7xl mx-auto overflow-hidden">
+        <section id="advantages" className="py-10 md:py-16 px-4 text-center max-w-7xl mx-auto overflow-hidden">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -38,10 +38,10 @@ export default function App() {
             <SplitText
               text="Explore Over 100+ Exclusive Brixline Advantage™ Listing."
               tag="h2"
-              className="text-3xl md:text-6xl font-extrabold mb-8 leading-tight text-on-surface"
+              className="text-2xl sm:text-4xl md:text-6xl font-extrabold mb-6 md:mb-8 leading-tight text-on-surface"
               delay={40}
             />
-            <p className="text-on-surface/60 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-on-surface/60 text-base md:text-lg mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed">
               Unlock priority access to high-yield properties with pre-negotiated double brokerage deals. 
               Our curated collection features exclusive off-market inventory verified for legal compliance and high demand.
             </p>
@@ -49,7 +49,7 @@ export default function App() {
               <motion.button 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="shimmer-btn bg-primary text-white px-12 py-5 rounded-2xl font-bold text-xl hover:bg-primary-dark transition-all shadow-2xl shadow-primary/30 glow-pulse cursor-pointer flex items-center gap-3"
+              className="shimmer-btn bg-primary text-white w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 rounded-2xl font-bold text-lg hover:bg-primary-dark transition-all shadow-2xl shadow-primary/30 glow-pulse cursor-pointer flex items-center justify-center gap-3"
               >
                 <Sparkles size={20} />
                 Join For Free

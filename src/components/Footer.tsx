@@ -4,14 +4,14 @@ import Logo from './Logo';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0D1B3E] text-white pt-20 pb-8 relative overflow-hidden">
+    <footer className="bg-[#0D1B3E] text-white pt-12 md:pt-20 pb-8 relative overflow-hidden">
       {/* Background orbs */}
       <div className="absolute top-0 left-1/4 w-[400px] h-[300px] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[300px] h-[200px] bg-primary/8 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         {/* Top row */}
-        <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16 pb-16 border-b border-white/8">
+        <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12 mb-12 md:mb-16 pb-12 md:pb-16 border-b border-white/8">
           <div className="max-w-xs">
           <div className="mb-6">
             <Logo type="light" />
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
 
           {/* Newsletter */}
-          <div className="bg-white/5 border border-white/10 p-8 rounded-3xl md:max-w-xs w-full">
+          <div className="bg-white/5 border border-white/10 p-6 md:p-8 rounded-2xl md:rounded-3xl md:max-w-xs w-full">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 rounded-xl bg-primary/20 flex items-center justify-center">
                 <Mail size={16} className="text-primary" />

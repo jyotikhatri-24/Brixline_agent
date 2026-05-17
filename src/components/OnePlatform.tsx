@@ -6,11 +6,11 @@ import SplitText from './SplitText';
 export default function OnePlatform() {
   return (
     <section className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
-      <div className="bg-surface rounded-[4rem] p-8 md:p-16 border border-gray-100 shadow-sm relative overflow-hidden">
+      <div className="bg-surface rounded-[2rem] md:rounded-[4rem] p-6 md:p-16 border border-gray-100 shadow-sm relative overflow-hidden">
         {/* Background Accent */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-bl from-primary/5 to-transparent -z-10" />
         
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-20 items-center">
           <motion.div
              initial={{ opacity: 0, x: -30 }}
              whileInView={{ opacity: 1, x: 0 }}
@@ -21,7 +21,7 @@ export default function OnePlatform() {
             <SplitText
               text="One Platform. Infinite Scalability."
               tag="h2"
-              className="text-4xl md:text-6xl font-black text-on-surface mb-8 leading-tight"
+              className="text-3xl md:text-6xl font-black text-on-surface mb-6 md:mb-8 leading-tight"
               delay={40}
               textAlign="left"
             />
@@ -54,10 +54,10 @@ export default function OnePlatform() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="relative rounded-[3rem] overflow-hidden shadow-3xl"
+            className="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-3xl"
           >
             <img 
-              className="w-full h-full object-cover min-h-[550px] brightness-95" 
+              className="w-full h-full object-cover min-h-[300px] md:min-h-[550px] brightness-95" 
               src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1470&auto=format&fit=crop" 
               alt="Modern Office Space" 
               referrerPolicy="no-referrer"
