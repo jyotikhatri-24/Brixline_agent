@@ -4,7 +4,7 @@ import Logo from './Logo';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0E0E10] text-white pt-20 pb-8 relative overflow-hidden">
+    <footer className="bg-[#0D1B3E] text-white pt-20 pb-8 relative overflow-hidden">
       {/* Background orbs */}
       <div className="absolute top-0 left-1/4 w-[400px] h-[300px] bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[300px] h-[200px] bg-primary/8 blur-[100px] rounded-full pointer-events-none" />

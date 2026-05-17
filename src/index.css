@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #9D2D1E;
-  --color-primary-dark: #7D251D;
-  --color-background: #FFFFFF;
-  --color-surface: #F7F7F7;
-  --color-on-surface: #222222;
-  --color-accent-cyan: #008489;
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-background: #F5F7FF;
+  --color-surface: #EEF2FF;
+  --color-on-surface: #0F172A;
+  --color-accent-cyan: #0EA5E9;
   
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   
@@ -37,7 +37,7 @@
   }
   
   .text-gradient {
-    @apply bg-linear-to-br from-[#9D2D1E] to-[#C0392B] bg-clip-text text-transparent;
+    @apply bg-linear-to-br from-[#2563EB] to-[#1D4ED8] bg-clip-text text-transparent;
   }
 
   .shimmer-btn {
@@ -66,7 +66,7 @@
   }
 
   .section-label {
-    @apply badge-pill mb-6;
+    @apply inline-flex items-center gap-2 px-4 py-1.5 bg-primary/10 text-primary font-bold text-xs tracking-widest uppercase rounded-full border border-primary/20 mb-6;
   }
 }
 
@@ -89,8 +89,8 @@
 }
 
 @keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(157, 45, 30, 0.3); }
-  50%       { box-shadow: 0 0 40px rgba(157, 45, 30, 0.6); }
+  0%, 100% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.35); }
+  50%       { box-shadow: 0 0 40px rgba(37, 99, 235, 0.65); }
 }
 
 @keyframes slide-up {
@@ -130,7 +130,7 @@
 }
 
 .shimmer-text {
-  background: linear-gradient(90deg, #9D2D1E, #E74C3C, #9D2D1E);
+  background: linear-gradient(90deg, #2563EB, #60A5FA, #2563EB);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -160,9 +160,9 @@
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #f7f7f7; }
-::-webkit-scrollbar-thumb { background: #9D2D1E40; border-radius: 99px; }
-::-webkit-scrollbar-thumb:hover { background: #9D2D1E; }
+::-webkit-scrollbar-track { background: #EEF2FF; }
+::-webkit-scrollbar-thumb { background: #2563EB40; border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: #2563EB; }
 
 /* ─── Grain Texture Overlay ──────────────────────────────── */
 

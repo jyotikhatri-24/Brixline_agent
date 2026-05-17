@@ -38,8 +38,8 @@ export default function Marquee() {
         </div>
 
         {/* Glow blobs */}
-        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-72 h-72 bg-primary/5 blur-[110px] rounded-full pointer-events-none" />
-        <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-72 h-72 bg-accent-cyan/4 blur-[110px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-72 h-72 bg-primary/8 blur-[110px] rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-72 h-72 bg-primary/5 blur-[110px] rounded-full pointer-events-none" />
 
         {/* Manifesto quote */}
         <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
@@ -113,7 +113,7 @@ export default function Marquee() {
           <use
             href="#smilePath"
             fill="none"
-            stroke="#9D2D1E"
+            stroke="#2563EB"
             strokeWidth="70"
             strokeLinecap="round"
           />

@@ -14,7 +14,7 @@ export default function Stats() {
   const stats = [
     { value: 2000, label: 'Active Brokers', sublabel: 'and growing', suffix: '+' },
     { value: 100, label: 'Verified Listings', sublabel: 'exclusive inventory', suffix: '+' },
-    { value: 0, label: 'Platform Fee', sublabel: 'zero deductions', suffix: '%' },
+    { value: 0, start: 15, label: 'Platform Fee', sublabel: 'zero deductions', suffix: '%' },
     { value: 100, label: 'Payout Rate', sublabel: 'T+7 guaranteed', suffix: '%' },
   ];
 
@@ -58,7 +58,7 @@ export default function Stats() {
               </div>
 
               <h3 className={`text-4xl md:text-5xl font-black mb-1 ${Meta.color} group-hover:scale-105 transition-transform`}>
-                <CountUp end={stat.value} suffix={stat.suffix} />
+                <CountUp end={stat.value} start={(stat as any).start} suffix={stat.suffix} />
               </h3>
               <p className="text-sm font-black text-on-surface tracking-tight">{stat.label}</p>
               <p className="text-xs text-on-surface/40 font-medium mt-1">{stat.sublabel}</p>
